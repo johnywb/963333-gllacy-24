@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="main-header">
@@ -10,21 +11,33 @@
            <a class="main-header-logo">
              <img src="img/index-logo.svg" alt="Логотип Gllacy Shop">
            </a>
-         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="delivery.html">Доставка и оплата</a></li>
-          <li><a href="about.html">О Компании</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="login-link">
-            Вход
-          </li>
-          <li class="basket">
-            Пусто
-          </li>
-        </ul>
-         </nav>
-       </header>
+           <ul class="site-navigation">
+            <li class="navs"><a href="catalog.html">Каталог</a></li>
+            <li class="navs"><a href="delivery.html">Доставка и оплата</a></li>
+            <li class="navs"><a href="about.html">О Компании</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li class="search">
+              <!-- здесь будет кнопка поиска -->
+            </li>
+            <li class="login-link">
+              <a href="entrance.html">Вход</a>
+            </li>
+            <li class="basket">
+              <a href="basket.html">Пусто</a>
+            </li>
+          </ul>
+           </nav>
+           <section class="timeandphone">
+             <p class="time">
+               С 10 до 20, ежедневно
+             </p>
+             <p class="phone">
+               8 812 450-25-25
+             </p>
+           </section>
+         </header>
+
 
        <main class="container">
 
@@ -37,7 +50,7 @@
 
              <ul class="features-list">
                <li class="feature-item">
-                 <img src="#">
+                 <img src="#" alt="иконка мороженого">
                  <p>
                    Все наше мороженое изготавливается на собственном
                    производстве, с использованием современного оборудования и
@@ -45,7 +58,7 @@
                  </p>
                </li>
                <li class="feature-item">
-                 <img src="#">
+                 <img src="#" alt="иконка листика">
                  <p>
                    Для приготовления мороженого используются настоящие сливки и
                    молоко высочайшего качества. Все дополнительные ингредиенты и
@@ -53,7 +66,7 @@
                  </p>
                </li>
                <li class="feature-item">
-                 <img src="#">
+                 <img src="#" alt="иконка коровы">
                  <p>
                    Закупка ингредиентов  производится только у проверенных
                    фермерских хозяйств и компаний, с которыми нас связывает
@@ -61,7 +74,7 @@
                  </p>
                </li>
                <li class="feature-item">
-                 <img src="#">
+                 <img src="#" alt="иконка термостата">
                  <p>
                    Доставка нашего мороженого до заказчиков осуществляется в
                    специальном термопаке, который не дает мороженому растаять в
@@ -74,7 +87,9 @@
            <p>
             Новое в нашем блоге
            </p>
-           <b>10 способов сервировки фруктовых щербетов к столу</b>
+           <a href="blog.html">
+             <b>10 способов сервировки фруктовых щербетов к столу</b>
+           </a>
          </article>
          <section class="subscribe">
            <p>
@@ -83,28 +98,29 @@
              слать всякой ненужной ерунды. Честно =)
            </p>
            <!-- Здесь будет форма -->
-           <span class="button-send">Отправить</span>
          </section>
        </main>
        <footer class="main-footer">
-         <div class="footer-social">
-           <a class="social-button" href="#">Twitter</a>
-           <a class="social-button" href="#">Instagram</a>
-           <a class="social-button" href="#">Facebook</a>
-           <a class="social-button" href="#">VK</a>
+         <ul class="footer-social">
+           <li class="social-button"><a href="#">Twitter</a></li>
+           <li class="social-button"><a href="#">Instagram</a></li>
+           <li class="social-button"><a href="#">Facebook</a></li>
+           <li class="social-button"><a href="#">VK</a></li>
          </div>
-         <div class="about">
-           <ul>
-             <li>Для поставщиков</li>
-             <li>О производстве</li>
-             <li>Наши документы</li>
-             <li>Экологические стандарты</li>
+           <ul class="about">
+             <li><a class="about-link" href="supplier.html">Для поставщиков</li></a>
+             <li><a class="about-link" href="aboutus.html">О производстве</li></a>
+             <li><a class="about-link" href="docs.html">Наши документы</li></a>
+             <li><a class="about-link" href="eco.html">Экологические стандарты</li></a>
            </ul>
-         </div>
          <div class="copyright">
-           <a class="copyright-button" href="https://htmlacademy.ru">HTML Academy</a>
+           <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
+             HTML Academy
+           </a>
            <p>
-             Сделано в HTML Academy © 2019
+             Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">
+               HTML Academy
+             </a> © 2019
            </p>
          </div>
        </footer>

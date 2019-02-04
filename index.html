@@ -1,140 +1,172 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header class="main-header">
-         <nav class="main-navigation">
-           <a class="main-header-logo">
-             <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
-           </a>
-           <ul class="site-navigation">
-            <li class="navs"><a href="catalog.html">Каталог</a></li>
-            <li class="navs"><a href="delivery.html">Доставка и оплата</a></li>
-            <li class="navs"><a href="about.html">О Компании</a></li>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="main-header">
+       <nav class="main-navigation">
+         <a class="main-header-logo">
+           <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
+         </a>
+         <ul class="site-navigation">
+          <li><a href="catalog.html">Каталог</a>
+          <ul class="catalog-navigation">
+            <li>Новинки</li>
+            <li><a href="#1">Сливочное</a></li>
+            <li><a href="#2">Щербеты</a></li>
+            <li><a href="#3">Фруктовый лед</a></li>
+            <li><a href="#4">Мелорин</a></li>
           </ul>
-          <ul class="user-navigation">
-            <li class="search">
-              <img src="img/loupe.svg" width="17" height="17" alt="лупа поиска">
-            </li>
-            <li class="login-link">
-              <img src="img/entrance.svg" width="17" height="17" alt="Вход">
-              <a href="entrance.html">Вход</a>
-            </li>
-            <li class="basket">
-              <img src="img/basket.svg" width="21" height="20" alt="Пустая корзина">
-              <a href="basket.html">Пусто</a>
-            </li>
-          </ul>
-           </nav>
-           <section class="timeandphone">
-             <p class="time">
-               С 10 до 20, ежедневно
-             </p>
-             <p class="phone">
-               8 812 450-25-25
-             </p>
-           </section>
-         </header>
-
-
-       <main class="container">
-
-         <h1 class="visually-hidden">Gllacy Shop</h1>
-
-         <section class="features">
-
-           <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже
-             мороженого собственного производства на развес</h2>
-
-             <ul class="features-list">
-               <li class="feature-item">
-                 <a class="icon-1" alt="иконка мороженого" ></a>
-                 <p>
-                   Все наше мороженое изготавливается на собственном
-                   производстве, с использованием современного оборудования и
-                   проверенных временем технологий.
-                 </p>
-               </li>
-               <li class="feature-item">
-                 <a class="icon-2" alt="иконка листика"></a>
-                 <p>
-                   Для приготовления мороженого используются настоящие сливки и
-                   молоко высочайшего качества. Все дополнительные ингредиенты и
-                   добавки произведены из натурального, экологически чистого сырья.
-                 </p>
-               </li>
-               <li class="feature-item">
-                 <a class="icon-3" alt="иконка коровы"></a>
-                 <p>
-                   Закупка ингредиентов  производится только у проверенных
-                   фермерских хозяйств и компаний, с которыми нас связывает
-                   долговременное сотрудничество.
-                 </p>
-               </li>
-               <li class="feature-item">
-                 <a class="icon-4" alt="иконка термостата"></a>
-                 <p>
-                   Доставка нашего мороженого до заказчиков осуществляется в
-                   специальном термопаке, который не дает мороженому растаять в
-                   пути и позволяет сохранить превосходный вкус.
-                 </p>
-               </li>
-             </ul>
+          </li>
+          <li><a href="delivery.html">Доставка и оплата</a></li>
+          <li><a href="about.html">О Компании</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="search">
+            <img src="img/loupe.svg" width="17" height="17" alt="лупа поиска">
+            <section class="search">
+              <input type="search" placeholder="Что ищем?" />
+            </section>
+          </li>
+          <li class="login-link">
+            <img src="img/entrance.svg" width="17" height="17" alt="Вход">
+            <a href="entrance.html">Вход</a>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <input type="email" name="login" id="login-field"
+              placeholder="Электронная почта" />
+              <input type="password" name="password" id="password-field"
+              placeholder="Пароль" />
+              <input type="submit" value="Войти" />
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
+          </li>
+          <li class="basket">
+            <img src="img/basket.svg" width="21" height="20" alt="Пустая корзина">
+            <a href="basket.html">Пусто</a>
+          </li>
+        </ul>
+         </nav>
+         <section class="timeandphone">
+           <p class="time">
+             С 10 до 20, ежедневно
+           </p>
+           <p class="phone">
+             8 812 450-25-25
+           </p>
          </section>
-         <article class="blog">
-           <p>
-            Новое в нашем блоге
-           </p>
-           <a href="blog.html">
-             <b>10 способов сервировки фруктовых щербетов к столу</b>
-           </a>
-         </article>
-         <section class="subscribe">
-           <p>
-             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
-             самого вкусного, что у нас происходит. Обещаем не спамить и не
-             слать всякой ненужной ерунды. Честно =)
-           </p>
-           <!-- Здесь будет форма -->
-         </section>
-       </main>
-       <footer class="main-footer">
-         <ul class="footer-social">
-           <li class="social-button">
-             <a class="twitter" alt="иконка твиттера"></a>
-           </li>
-           <li class="social-button">
-             <a class="instagram" alt="Instagram" />
-           </li>
-           <li class="social-button">
-             <a class="facebook" alt="Facebook" />
-           </li>
-           <li class="social-button">
-             <a class="vk" alt="VK" />
-           </li>
-         </ul>
-           <ul class="about">
-             <li><a class="about-link" href="supplier.html">
-               <img src="img/heart.svg" width="15" height="13" alt="сердечко" />
-               Для поставщиков</a></li>
-             <li><a class="about-link" href="aboutus.html">О производстве</a></li>
-             <li><a class="about-link" href="docs.html">Наши документы</a></li>
-             <li><a class="about-link" href="eco.html">Экологические стандарты</a></li>
-           </ul>
-         <div class="copyright">
-           <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
-             <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy" />
-           </a>
-           <p>
-             Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">
-               HTML Academy
-             </a> © 2019
-           </p>
-         </div>
-       </footer>
-  </body>
+       </header>
+
+
+  <main class="container">
+
+    <h1 class="visually-hidden">Gllacy Shop</h1>
+
+    <section class="features">
+
+      <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже
+        мороженого собственного производства на развес</h2>
+
+      <ul class="features-list">
+        <li class="icon-1">
+          <!-- "иконка мороженого" -->
+          <p>
+            Все наше мороженое изготавливается на собственном
+            производстве, с использованием современного оборудования и
+            проверенных временем технологий.
+          </p>
+        </li>
+        <li class="icon-2">
+          <!-- иконка листика -->
+          <p>
+            Для приготовления мороженого используются настоящие сливки и
+            молоко высочайшего качества. Все дополнительные ингредиенты и
+            добавки произведены из натурального, экологически чистого сырья.
+          </p>
+        </li>
+        <li class="icon-3">
+          <!-- иконка коровы -->
+          <p>
+            Закупка ингредиентов производится только у проверенных
+            фермерских хозяйств и компаний, с которыми нас связывает
+            долговременное сотрудничество.
+          </p>
+        </li>
+        <li class="icon-4">
+          <!-- иконка термостата -->
+          <p>
+            Доставка нашего мороженого до заказчиков осуществляется в
+            специальном термопаке, который не дает мороженому растаять в
+            пути и позволяет сохранить превосходный вкус.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <article class="blog">
+      <p>
+        Новое в нашем блоге
+      </p>
+      <a href="blog.html">
+        <b>10 способов сервировки фруктовых щербетов к столу</b>
+      </a>
+    </article>
+    <section class="subscribe">
+      <p>
+        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+        самого вкусного, что у нас происходит. Обещаем не спамить и не
+        слать всякой ненужной ерунды. Честно =)
+      </p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <h3>Мы обязательно вам ответим!</h3>
+        <input type="text" name="name" id="name-field"
+        placeholder="Как вас зовут?" />
+        <input type="email" name="email" id="email-field"
+        placeholder="Ваша почта для ответа?" />
+        <input type="text" name="comment" id="comment-field"
+        placeholder="Напишите что-нибудь..." />
+        <input type="submit" value="Отправить" />
+      </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <ul class="footer-social">
+      <li class="social-button">
+        <a class="twitter" alt="иконка твиттера"></a>
+      </li>
+      <li class="social-button">
+        <a class="instagram" alt="Instagram" />
+      </li>
+      <li class="social-button">
+        <a class="facebook" alt="Facebook" />
+      </li>
+      <li class="social-button">
+        <a class="vk" alt="VK" />
+      </li>
+    </ul>
+    <ul class="about">
+      <li><a class="about-link" href="supplier.html">
+          <img src="img/heart.svg" width="15" height="13" alt="сердечко" />
+          Для поставщиков</a></li>
+      <li><a class="about-link" href="aboutus.html">О производстве</a></li>
+      <li><a class="about-link" href="docs.html">Наши документы</a></li>
+      <li><a class="about-link" href="eco.html">Экологические стандарты</a></li>
+    </ul>
+    <div class="copyright">
+      <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy" />
+      </a>
+      <p>
+        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">
+          HTML Academy
+        </a> © 2019
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>

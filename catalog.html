@@ -10,32 +10,69 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
+      <a class="main-header-logo" href="index.html">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
       </a>
       <ul class="site-navigation">
-        <li class="navs"><a href="catalog.html">Каталог</a></li>
+        <li class="navs"><a href="catalog.html">Каталог</a>
+          <ul class="catalog-navigation">
+            <li><a href="#1">Новинки</a></li>
+            <li><a href="#2">Сливочное</a></li>
+            <li><a href="#3">Щербеты</a></li>
+            <li><a href="#4">Фруктовый лед</a></li>
+            <li><a href="#5">Мелорин</a></li>
+          </ul>
+        </li>
         <li class="navs"><a href="delivery.html">Доставка и оплата</a></li>
         <li class="navs"><a href="about.html">О Компании</a></li>
       </ul>
       <ul class="user-navigation">
         <li class="search">
           <img src="img/loupe.svg" width="17" height="17" alt="лупа поиска">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="search" placeholder="Что ищем?" />
+          </form>
         </li>
         <li class="login-link">
+          <a href="entrance.html">
           <img src="img/entrance.svg" width="17" height="17" alt="Вход">
-          <a href="entrance.html">Вход</a>
+          Вход</a>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="email" name="login" id="login-field"
+            placeholder="Электронная почта" />
+            <input type="password" name="password" id="password-field"
+            placeholder="Пароль" />
+            <input type="submit" value="Войти" />
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </form>
         </li>
         <li class="basket">
+          <a href="basket.html">
           <img src="img/basket-red.svg" width="21" height="20" alt="Пустая корзина">
-          <a href="basket.html">2 товара</a>
+          2 товара</a>
+          <div class="basket-open">
           <table>
             <tr class="row1">
+              <td style="">
+                <img src="img/cross-small.svg" width="11" height="11" alt="закрыть" />
+              </td>
+              <td>
+                <img src="img/ice-mini-1.jpg" width="33" height="33"
+                alt="картинка пломбира с апельсиновым джемом" />
+              </td>
               <td style="">Пломбир с апельсиновым джемом</td>
               <td style="">1,5кг x <span class="grey">200 руб.</span></td>
               <td style="">300 руб.</td>
             </tr>
             <tr class="row2">
+              <td style="">
+                <img src="img/cross-small.svg" width="11" height="11" alt="закрыть" />
+              </td>
+              <td>
+                <img src="img/ice-mini-2.jpg" width="33" height="33"
+                alt="картинка клубничного пломбира с присыпкой из белого шоколада" />
+              </td>
               <td style="">Клубничный пломбир с присыпкой из белого шоколада</td>
               <td style="">1,5кг x <span class="grey">300 руб.</span></td>
               <td style="">450 руб.</td>
@@ -44,7 +81,8 @@
               <td>Итого: 750 руб.</td>
             </tr>
           </table>
-          <input type="submit" value="Оформить заказ" />
+          <input type="button" value="Оформить заказ" />
+          </div>
         </li>
       </ul>
     </nav>
@@ -59,7 +97,7 @@
   </header>
 
   <div class="catalog">
-    <a href="#">Главная</a>
+    <a href="index.html">Главная</a>
     <a href="#">Каталог</a>
     <a class="active" href="#">Сливочное</a>
   </div>
@@ -187,16 +225,20 @@
   <footer class="main-footer">
     <ul class="footer-social">
       <li class="social-button">
-        <img src="img/twitter.svg" width="32" height="32" alt="Twitter" />
+        <a class="twitter">
+          <span class="visually hidden">иконка твиттера</span></a>
       </li>
       <li class="social-button">
-        <img src="img/instagram.svg" width="32" height="32" alt="Instagram" />
+        <a class="instagram">
+        <span class="visually hidden">Instagram</span></a>
       </li>
       <li class="social-button">
-        <img src="img/facebook.svg" width="32" height="32" alt="Facebook" />
+        <a class="facebook" alt="Facebook">
+          <span class="visually hidden">Facebook</span></a>
       </li>
       <li class="social-button">
-        <img src="img/vk.svg" width="32" height="32" alt="VK" />
+        <a class="vk" alt="VK">
+          <span class="visually hidden">ВКонтакте</span></a>
       </li>
     </ul>
     <ul class="about">

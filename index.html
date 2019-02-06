@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,7 +19,7 @@
         <li><a href="catalog.html">Каталог</a>
           <ul class="catalog-navigation">
             <li><a href="#1">Новинки</a></li>
-            <li><a href="#2">Сливочное</a></li>
+            <li><a href="catalog.html">Сливочное</a></li>
             <li><a href="#3">Щербеты</a></li>
             <li><a href="#4">Фруктовый лед</a></li>
             <li><a href="#5">Мелорин</a></li>
@@ -29,7 +29,7 @@
         <li><a href="about.html">О Компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="search">
+        <li class="login-link search">
           <!-- иконка лупы поиска -->
           <form action="https://echo.htmlacademy.ru" method="post">
             <input type="search" placeholder="Что ищем?" />
@@ -47,7 +47,7 @@
             <a href="#">Новая регистрация</a>
           </form>
         </li>
-        <li class="basket">
+        <li class="login-link basket">
           <a href="basket.html">
             <!-- иконка корзины -->
             Пусто</a>
@@ -55,7 +55,7 @@
       </ul>
     </nav>
     <section class="timeandphone">
-      <p class="time">
+      <p>
         С 10 до 20, ежедневно
       </p>
       <p class="phone">
@@ -113,7 +113,7 @@
       <p>
         Новое в нашем блоге
       </p>
-      <a href="blog.html">
+      <a class="white-link" href="blog.html">
         <b>10 способов сервировки фруктовых щербетов к столу</b>
       </a>
     </article>
@@ -125,7 +125,7 @@
       </p>
       <form action="https://echo.htmlacademy.ru" method="post">
         <input type="email" id="email-subscribe" name="email-subscribe" placeholder="Электронная почта" />
-        <input type="submit" value="Отправить" />
+        <button class="button">Отправить</button>
       </form>
     </section>
   </main>
@@ -149,19 +149,19 @@
       </li>
     </ul>
     <ul class="about">
-      <li><a class="about-link" href="supplier.html">
+      <li><a class="link" href="supplier.html">
           <!-- иконка сердечка -->
           Для поставщиков</a></li>
-      <li><a class="about-link" href="aboutus.html">О производстве</a></li>
-      <li><a class="about-link" href="docs.html">Наши документы</a></li>
-      <li><a class="about-link" href="eco.html">Экологические стандарты</a></li>
+      <li><a class="link" href="aboutus.html">О производстве</a></li>
+      <li><a class="link" href="docs.html">Наши документы</a></li>
+      <li><a class="link" href="eco.html">Экологические стандарты</a></li>
     </ul>
     <div class="copyright">
       <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy" />
       </a>
       <p>
-        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">
+        Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">
           HTML Academy
         </a> © 2019
       </p>

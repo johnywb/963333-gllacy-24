@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -65,12 +65,12 @@
                 <img src="img/ice-mini-1.jpg" width="33" height="33"
                 alt="картинка пломбира с апельсиновым джемом" />
               </td>
-              <td style="">Пломбир с апельсиновым джемом</td>
-              <td style="">1,5кг x <span class="grey">200 руб.</span></td>
-              <td style="">300 руб.</td>
+              <td class="basket-main">Пломбир с апельсиновым джемом</td>
+              <td class="basket-main">1,5кг x <span class="grey">200 руб.</span></td>
+              <td class="basket-main">300 руб.</td>
             </tr>
             <tr class="row2">
-              <td style="">
+              <td style="busket-main">
                 <button>
                 <!-- крестик. закрытие окна -->
                 </button>
@@ -79,15 +79,15 @@
                 <img src="img/ice-mini-2.jpg" width="33" height="33"
                 alt="картинка клубничного пломбира с присыпкой из белого шоколада" />
               </td>
-              <td style="">Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td style="">1,5кг x <span class="grey">300 руб.</span></td>
-              <td style="">450 руб.</td>
+              <td class="basket-main">Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td class="basket-main">1,5кг x <span class="grey">300 руб.</span></td>
+              <td class="basket-main">450 руб.</td>
             </tr>
             <tr class="row3">
-              <td>Итого: 750 руб.</td>
+              <td class="basket-all">Итого: 750 руб.</td>
             </tr>
           </table>
-          <input type="button" value="Оформить заказ" />
+          <button class="button">Оформить заказ</button>
           </div>
         </li>
       </ul>
@@ -103,12 +103,12 @@
   </header>
 
   <div class="catalog">
-    <a href="index.html">Главная</a>
-    <a href="#">Каталог</a>
-    <a class="active" href="#">Сливочное</a>
+    <a class="link" href="index.html">Главная</a>
+    <a class="link" href="#">Каталог</a>
+    <a>Сливочное</a>
   </div>
 
-  <h1>Сливочное мороженое</h1>
+  <h1 class="title-catalog">Сливочное мороженое</h1>
 
 
   <main class="ice-cream">
@@ -120,7 +120,7 @@
           310₽<span class="kg">/кг</span>
         </p>
         <p>
-          <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a class="link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </p>
       </li>
       <li class="ice-cream-item">
@@ -129,7 +129,7 @@
           380₽<span class="kg">/кг</span>
         </p>
         <p>
-          <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+          <a class="link" href="#">Сливочно-кофейное с кусочками шоколада</a>
         </p>
       </li>
       <li class="ice-cream-item">
@@ -147,7 +147,7 @@
           415₽<span class="kg">/кг</span>
         </p>
         <p>
-          <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          <a class="link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </p>
       </li>
       <!-- Вторая строка -->
@@ -157,7 +157,7 @@
           325₽<span class="kg">/кг</span>
         </p>
         <p>
-          <a href="#">Сливочное с брусничным джемом</a>
+          <a class="link" href="#">Сливочное с брусничным джемом</a>
         </p>
       </li>
       <li class="ice-cream-item">
@@ -166,7 +166,7 @@
           410₽<span class="kg">/кг</span>
         </p>
         <p>
-          <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+          <a class="link" href="#">Сливочно-черничное с цельными ягодами черники</a>
         </p>
       </li>
       <li class="ice-cream-item">
@@ -175,7 +175,7 @@
           375₽<span class="kg">/кг</span>
         </p>
         <p>
-          <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+          <a class="link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
         </p>
       </li>
       <li class="ice-cream-item">
@@ -184,7 +184,7 @@
           320₽<span class="kg">/кг</span>
         </p>
         <p>
-          <a href="#">Сливочное с шоколадной стружкой</a>
+          <a class="link" href="#">Сливочное с шоколадной стружкой</a>
         </p>
       </li>
       <!-- Третья строка -->
@@ -194,7 +194,7 @@
           440₽<span class="kg">/кг</span>
         </p>
         <p>
-          <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+          <a class="link" href="#">Сливочно-ванильное с кусочками шоколада</a>
         </p>
       </li>
       <li class="ice-cream-item">
@@ -203,7 +203,7 @@
           435₽<span class="kg">/кг</span>
         </p>
         <p>
-          <a href="#">Сливочное с ментоловым сиропом</a>
+          <a class="link" href="#">Сливочное с ментоловым сиропом</a>
         </p>
       </li>
       <li class="ice-cream-item">
@@ -212,7 +212,7 @@
           355₽<span class="kg">/кг</span>
         </p>
         <p>
-          <a href="#">Сливочное с кусочками черного шоколада</a>
+          <a class="link" href="#">Сливочное с кусочками черного шоколада</a>
         </p>
       </li>
       <li class="ice-cream-item">
@@ -221,7 +221,7 @@
           420₽<span class="kg">/кг</span>
         </p>
         <p>
-          <a href="#">Сливочное с мятным сиропом</a>
+          <a class="link" href="#">Сливочное с мятным сиропом</a>
         </p>
       </li>
     </ul>
@@ -248,12 +248,12 @@
       </li>
     </ul>
     <ul class="about">
-      <li><a class="about-link" href="supplier.html">
+      <li><a class="link" href="supplier.html">
           <!-- иконка сердечка -->
           Для поставщиков</a></li>
-      <li><a class="about-link" href="aboutus.html">О производстве</a></li>
-      <li><a class="about-link" href="docs.html">Наши документы</a></li>
-      <li><a class="about-link" href="eco.html">Экологические стандарты</a></li>
+      <li><a class="link" href="aboutus.html">О производстве</a></li>
+      <li><a class="link" href="docs.html">Наши документы</a></li>
+      <li><a class="link" href="eco.html">Экологические стандарты</a></li>
     </ul>
     <div class="copyright">
       <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">

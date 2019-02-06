@@ -30,6 +30,11 @@ a {
   color: #ffffff;
 }
 
+.site-navigation {
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 .site-navigation > li {
   position: relative;
   display: inline-block;
@@ -49,11 +54,15 @@ a {
 .site-navigation a,
 .user-navigation a {
   color: #ffffff;
+  text-decoration: none;
 }
 
-.catalog-navigation a {
+.catalog-navigation {
+  position: absolute;
   display: none;
   text-decoration: none;
+  font-size: 14px;
+  line-height: 1.14;
   color: #323232;
   background-color: #f7f6f3;
 }
@@ -68,10 +77,25 @@ a {
   /* border-radius: 50px;  */
 }
 
-li:hover .catalog-navigation a {
+li:hover .catalog-navigation {
   display: block;
+  color: #323232;
 }
 
+
+.timeandphone {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.phone {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
 
 .features-list {
   list-style: none;
@@ -99,6 +123,7 @@ section.features {
 
 .features h2 {
   font-size: 24px;
+  font-weight: 500;
   line-height: 30px;
 }
 
@@ -117,13 +142,14 @@ section.features {
 .blog p {
   font-size: 16px;
   line-height: 22px;
+  font-weight: 500;
 }
 
 .blog a {
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
-  color: black;
+  font-weight: 700;
+  color: #323232;
 }
 
 .subscribe {
@@ -133,6 +159,7 @@ section.features {
 .subscribe p {
   font-size: 16px;
   line-height: 22px;
+  color: #5a5a5a;
 }
 
 .footer-social,
@@ -166,7 +193,7 @@ section.features {
   color: #ffffff;
 }
 
-h1 {
+h1.title-catalog {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
@@ -190,6 +217,55 @@ h1 {
 .ice-cream-item a {
   font-size: 16px;
   line-height: 22px;
-  font-weight: normal;
+  font-weight: 500;
   color: #ffffff;
+}
+
+a.link:hover,
+a.link:focus,
+a.link:active {
+  color: #ffbc9e;
+}
+
+a.white-link:hover,
+a.white-link:focus,
+a.white-link:active {
+color: #e84d37;
+}
+
+.basket-main {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #323232;
+}
+
+.basket-main .grey {
+  color: #999999;
+}
+
+.basket-all {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #323232;
+}
+
+.login-link {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+button.button {
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+background-color: #e84d37;
+background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
 }

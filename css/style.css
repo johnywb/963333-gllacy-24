@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #323232;
+  text-transform: none;
+
+  background-color: #849d8f;
+background-position: top center;
+background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.main-header-logo {
+  position: relative;
+  left: 27px;
+  top: 9px;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.site-navigation > li {
+  position: relative;
+  display: inline-block;
+}
+
+.user-navigation > li {
+  position: relative;
+  display: inline-block;
+}
+
+.site-navigation,
+.user-navigation,
+.catalog-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.catalog-navigation a {
+  display: none;
+  text-decoration: none;
+  color: #323232;
+  background-color: #f7f6f3;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  text-decoration: none;
+  color: #323232;
+  background-color: #f7f6f3;
+  /* border-radius: 50px;  */
+}
+
+li:hover .catalog-navigation a {
+  display: block;
+}
+
+
+.features-list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+section.features {
+  background-color: #e6d6ae;
+  background-image: url("../img/bg-wufer.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.features h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.features p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.blog {
+  background-color: #ffffff;
+  background-image: url("../img/bg-strawberry.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.blog p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.blog a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+.subscribe {
+  background-color: #f8f7f4;
+}
+
+.subscribe p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer-social,
+.about {
+  list-style: none;
+}
+
+.twitter {
+  background-color: #c2cec7;
+  background-image: url("../img/twitter.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.about-link {
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.copyright p,
+.copyright a {
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.catalog a {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.ice-cream-item p {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.kg {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.ice-cream-item a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #ffffff;
+}

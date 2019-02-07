@@ -63,8 +63,20 @@ a {
   text-decoration: none;
   font-size: 14px;
   line-height: 1.14;
+}
+
+.catalog-navigation a {
   color: #323232;
   background-color: #f7f6f3;
+}
+
+.catalog-navigation li:hover,
+.catalog-navigation li:focus {
+  background-color: #fbded7;
+}
+
+.catalog-navigation li:active {
+  background-color: #f6b5a5;
 }
 
 .site-navigation a:hover,
@@ -80,6 +92,7 @@ a {
 li:hover .catalog-navigation {
   display: block;
   color: #323232;
+  background-color: #f7f6f3;
 }
 
 
@@ -174,7 +187,7 @@ section.features {
   background-repeat: no-repeat;
 }
 
-.about-link {
+.about .link {
   font-size: 13px;
   line-height: 18px;
   color: #ffffff;

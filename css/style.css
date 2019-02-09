@@ -1,3 +1,11 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -20,19 +28,45 @@ a {
 
 .main-header-logo {
   position: relative;
+  display: inline-block;
   left: 27px;
   top: 9px;
 }
 
 .main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: baseline;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 }
 
+.hidden-form {
+  display: none;
+}
+
 .site-navigation {
+  width: 725px;
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  left: -85px;
   font-weight: bold;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.site-navigation li:first-child,
+.site-navigation li:nth-child(2) {
+  margin-right: 28px;
+}
+
+.user-navigation {
+    display: flex;
+    width: 245px;
+    justify-content: space-around;
+    padding: 0px 10px;
 }
 
 .site-navigation > li {
@@ -43,6 +77,16 @@ a {
 .user-navigation > li {
   position: relative;
   display: inline-block;
+}
+
+.search {
+  width: 33px;
+  height: 33px;
+  background-image: url("../img/loupe.svg") no-repeat;
+  background-size: 17px 17px;
+  background-position: right 272px top 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 33px 33px;
 }
 
 .site-navigation,
@@ -266,6 +310,8 @@ color: #e84d37;
 
 .login-link {
   color: #ffffff;
+  width: 93px;
+  height: 32px;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
